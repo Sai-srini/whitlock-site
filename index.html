@@ -343,11 +343,11 @@ footer {
 
 /* ── MOBILE ── */
 @media(max-width:900px) {
-  nav { padding: 12px 20px; mix-blend-mode: normal; background: rgba(10,10,10,0.1); backdrop-filter: blur(10px); color: var(--w); }
-  .nav-center-logo { position: static; transform: none; display: flex; flex-direction: column; align-items: flex-start; gap: 0px; }
-  .nav-logo-sub { border-left: none; padding-left: 0; font-size: 7px; color: rgba(244,240,232,0.5); }
+  nav { padding: 12px 20px; mix-blend-mode: normal; background: transparent; color: var(--w); }
+  .nav-center-logo { position: absolute; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 0px; text-align: center; width: auto; }
+  .nav-logo-sub { border-left: none; padding-left: 0; font-size: 7px; color: rgba(244,240,232,0.5); letter-spacing: 2px; }
   .nav-center-logo span:first-child { color: var(--w) !important; font-size: 20px !important; }
-  nav img { height: 24px !important; filter: invert(1) brightness(1.5); }
+  nav img { height: 22px !important; filter: invert(1) brightness(1.5); }
 
   .hero { padding: 80px 0 40px; justify-content: center; }
   .hero-pill { top: 70px; right: 20px; font-size: 8px; padding: 6px 14px; }
